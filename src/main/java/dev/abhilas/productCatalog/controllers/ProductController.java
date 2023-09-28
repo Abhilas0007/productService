@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
+//@Qualifier is used to explicitly mark which Product Service to use to avoid ambiguity
+// else we can use @Primary on that service to mark it as default in case of no Qualifier
 @RestController
 @RequestMapping("/api/v1/products")
 public class ProductController {
